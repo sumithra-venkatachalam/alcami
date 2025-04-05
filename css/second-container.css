@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.left-section,
+.right-section {
+  flex: 1;
+  min-width: 300px;
+}
+.product-image-container {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px;
+}
+.product-image {
+  width: 100%;
+}
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.thumbnails img {
+  width: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+h2 {
+  font-size: 24px;
+}
+.flavor-options {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+.flavor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.flavor.active {
+  border: 2px solid orange;
+  background: #fff8e7;
+}
+.subscription {
+  margin-top: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.subscription .header {
+  background: #f4c35c;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.sub-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.includes {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.radio-option {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.add-btn {
+  background: #556b2f;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: #6b8e23;
+}
+.checklist {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+.checklist li {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+}
+.checklist li::before {
+  content: "✔";
+  color: green;
+  position: absolute;
+  left: 0;
+}
